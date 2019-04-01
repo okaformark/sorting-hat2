@@ -1,4 +1,6 @@
-const sortButton = document.getElementById('startButton');
+const startButton = document.getElementById('startButton');
+const sortButton = document.getElementById('sortButton');
+const inputText = document.getElementById('nameInput');
 //printToDom function
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
@@ -18,7 +20,13 @@ const showSortForm = () => {
 
     printToDom('sortingId', domString);
 };
+
+const clearForm = () => {
+    domString = '';
+    inputText.value = '';
+};
 const buttonEvent = () => {
-    sortButton.addEventListener('click', showSortForm);
+    startButton.addEventListener('click', showSortForm);
+    sortButton.addEventListener('click', clearForm);
 };
 buttonEvent();
