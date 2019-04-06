@@ -1,3 +1,22 @@
 body{
     background-color: bisque;
+    margin:0px;
+    padding: 0px;
+    background-image: url("https://vignette.wikia.nocookie.net/harrypotter/images/b/bd/Dhogwarts.jpg/revision/latest?cb=20120128145344");
 }
+h2{
+    color:red;
+}
+ img{
+     max-height: 150px;
+     max-width: 150px;
+ }
+
+ #studentId {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .card {
+     max-width: 300px;
+ }
