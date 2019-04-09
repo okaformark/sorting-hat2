@@ -2,7 +2,7 @@
 Sort student into houses and prints a card for each student to the DOM
 
 ## Screenshots
-![alt text](https://raw.githubusercontent.com/okaformark/sorting-hat2/master/images/screenshot.jpg)
+![alt text](https://raw.githubusercontent.com/okaformark/sorting-hat2/master/images/Capture.PNG)
 ## Getting Started
 
  ```
