@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Shadows+Into+Light|Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+
+
 body{
     background-color: bisque;
     margin:0px;
@@ -19,4 +25,20 @@ h2{
 
  .card {
      max-width: 300px;
+ }
+ .jumbotron h1{
+    font-family: 'Pacifico', cursive;
+ }
+ .jumbotron p{
+    font-family: 'Shadows Into Light', cursive;
+ }
+ .jumbotron a{
+    font-family: 'Vollkorn', serif;
+ }
+ form h2{
+    font-family: 'Gloria Hallelujah', cursive;
+ }
+ form small{
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
  }
