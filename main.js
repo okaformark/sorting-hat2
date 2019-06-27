@@ -1,12 +1,6 @@
-let hogwartsHouse = ['Gryffindor <img src = "https://i.etsystatic.com/12418370/r/il/cf0987/1399095574/il_fullxfull.1399095574_a4kg.jpg">', 'Hufflepuff <img src = "https://i.etsystatic.com/12418370/r/il/cf0987/1399095574/il_fullxfull.1399095574_a4kg.jpg">', 'Ravenclaw <img src = "https://rlv.zcache.com/harry_potter_ravenclaw_coat_of_arms_ipad_smart_cover-re20e564f7bcc40f0a4940061e327ed1c_zwpxi_540.jpg?rlvnet=1">', 'Slytherin <img src = "https://i.etsystatic.com/11471731/r/il/990af5/1393897357/il_570xN.1393897357_1ke3.jpg">'];
-// let hogwartsLogo = [
-//    ,
-//     '',
-//     '',
-//     ''
-// ];
+let hogwartsHouse = ['Gryffindor <img src = "https://i.etsystatic.com/12418370/r/il/cf0987/1399095574/il_fullxfull.1399095574_a4kg.jpg" height="300px" width="300px">', 'Hufflepuff <img src = "https://i.etsystatic.com/12418370/r/il/cf0987/1399095574/il_fullxfull.1399095574_a4kg.jpg" height="300px" width="300px">', 'Ravenclaw <img src = "https://rlv.zcache.com/harry_potter_ravenclaw_coat_of_arms_ipad_smart_cover-re20e564f7bcc40f0a4940061e327ed1c_zwpxi_540.jpg?rlvnet=1" height="300px" width="300px">', 'Slytherin <img src = "https://i.etsystatic.com/11471731/r/il/990af5/1393897357/il_570xN.1393897357_1ke3.jpg" height="300px" width="300px">'];
+
 const startButton = document.getElementById('startButton');
-// const inputText = document.getElementById('nameInput');
 
 const studentName = [];
 let cardCounter = 1;
@@ -45,16 +39,13 @@ const clearForm = (nameInputElement) => {
 const studentCardBuilder = (cardToPrint) =>{
     let studentCard = '';
     cardToPrint.forEach((student) => {
-        // studentCard += `<div class = "container">`;
-        studentCard +=  `<div class="card">`;
+        studentCard +=  `<div class="card animated bounceInUp">`;
         studentCard +=      `<div class="card-body">`;
         studentCard +=          `<h5 class="card-title">${student.item}</h5>`;
-        studentCard +=          `<p class="card-text">Your new House is <h2>${hogwartsHouse[student.house]}!!!</p>`;
+        studentCard +=          `<p class="card-text">Your new House is <h2>${hogwartsHouse[student.house]}</p>`;
         studentCard +=          `<button href="#" class="btn btn-danger deleteButton" id = ${student.id}>Expel!</button>`;
         studentCard +=      `</div>`;
-        studentCard +=  `</div>`;
-        // studentCard += `</div>`;
-        
+        studentCard +=  `</div>`; 
     });
     printToDom ('studentId', studentCard);
 };
@@ -80,7 +71,6 @@ const addStudent = (e) =>{
 }
 
 const showSortForm = () => {
-    // e.preventDefault();
     let domString = '';
     domString += `<form>`;
     domString +=    `<h2>Enter Student Name</h2>`
@@ -95,13 +85,10 @@ const showSortForm = () => {
     printToDom('sortingId', domString);
 
     const sortButton = document.getElementById('sortButton');
-    // addStudent();
     sortButton.addEventListener('click', addStudent);
    
     
 };
-
-
 
 
 const buttonEvent = () => {
