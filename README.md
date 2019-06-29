@@ -18,7 +18,7 @@ At the root of the project, run **npm install**
 In the terminal, type **npm start** to run the webpage.
 If you want to make a production build of this project, type **npm run build**. This will create a folder called **build** with all of the minified code you need.
 
-Link to firebase [Here](https://movie-history-2e70e.firebaseapp.com)
+Link to firebase [Here](https://sorting-hat-20fa8.firebaseapp.com/)
 
 # Author
 Mark Okafor
